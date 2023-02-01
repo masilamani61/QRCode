@@ -1,0 +1,57 @@
+body{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    background-color:skyblue;
+}
+.wrapper{
+    height: 200px;
+    background-color: white;
+    padding: 16px 25px;
+    border-radius: 5px;
+    
+
+}
+.wrapper.active{
+    height: 500px;
+}
+p{
+    font-size: 15px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+.form :where(input,button){
+    width: 100%;
+    height: 35px;
+    border: none;
+    outline: none;
+    border-radius: 5px;
+}
+
+.form button{
+    margin-top: 10px;
+    margin-bottom: 10px;
+    font-size: 19px;
+    background-color:skyblue;
+}
+    
+.form input{
+    font-size: 19px;
+    border: 1px solid black;
+}
+.wrapper .qrcode{
+    display: flex;
+    opacity: 0;
+    pointer-events: none;
+    border: 1px solid black;
+    padding: 33px;
+    align-items: center;
+    justify-content: center;
+    border-radius: 5px;
+    
+}
+.wrapper.active .qrcode{
+    opacity: 1;
+    pointer-events: auto;
+    transition: opacity 0.5s 0.05s ease;
+}
